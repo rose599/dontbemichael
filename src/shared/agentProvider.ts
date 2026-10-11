@@ -170,7 +170,7 @@ export interface AgentProviderPreset {
 /** The engines this build offers the owner. Only Claude Code is supported for
  *  now; every other preset stays below, fully wired, so bringing one back means
  *  adding its id here and nothing else. Setup's manager step reads this. */
-export const BUILD_ENGINES: readonly AgentProvider[] = ['claude'];
+export const BUILD_ENGINES: readonly AgentProvider[] = ['claude', 'codex'];
 
 /** Engines that read the owner's own API keys and local endpoints (Settings →
  *  Agents, AI engine providers). Claude Code and Codex use their own
